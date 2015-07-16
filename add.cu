@@ -27,7 +27,7 @@ int main()
         //Copy Device Memory to Host Memory
 	cudaMemcpy(&a, d_a, sizeof(int), cudaMemcpyDeviceToHost);
 
-	cout << "The answer is "<<a<<endl;
+	printf("The answer is ",a);
 
 	
         //Free Device Memory
